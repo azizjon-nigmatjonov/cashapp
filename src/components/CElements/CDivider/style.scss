@@ -1,0 +1,14 @@
+.CDivider {
+  .MuiDivider-wrapper {
+    .MuiChip-root {
+      background-color: $page-background;
+      @include alignCenterJusftifyCenter;
+      .MuiChip-label {
+        font-size: 12px;
+        color: $main;
+        font-weight: bold;
+        margin-top: 1px;
+      }
+    }
+  }
+}

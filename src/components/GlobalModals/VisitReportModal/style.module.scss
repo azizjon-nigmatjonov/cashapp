@@ -1,0 +1,28 @@
+.wrapper {
+  @include alignCenterJusftifyCenter;
+  @include flexDirectionColumn;
+
+  .list {
+    width: 100%;
+    .item {
+      padding: 10px 0;
+      border-top: 1px solid $borders;
+      @include alignCenterJustifyBetween;
+
+      &:last-child {
+        border-bottom: 1px solid $borders;
+      }
+    }
+  }
+  h1 {
+    font-size: 14px;
+    color: $light;
+    font-weight: 600;
+  }
+  span {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: $black;
+  }
+}

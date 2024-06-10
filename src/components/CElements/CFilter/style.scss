@@ -1,0 +1,28 @@
+.CFilter {
+  display: inline-flex;
+  align-items: center;
+
+  .clear {
+    position: absolute;
+    right: 20px;
+  }
+
+  .arrow {
+    position: relative;
+    width: 24px;
+    .up {
+      position: absolute;
+      top: -19px;
+      right: 0;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .down {
+      position: absolute;
+      bottom: -17px;
+      right: 0;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+}

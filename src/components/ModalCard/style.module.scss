@@ -1,0 +1,45 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  .card {
+    border: none;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+
+      .cardTitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .closeButton {
+        svg {
+          color: $grey;
+        }
+      }
+
+      .closeIcon {
+        font-size: 28px;
+      }
+    }
+
+    .body {
+      overflow: auto;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .button {
+        flex: 1;
+      }
+    }
+  }
+}

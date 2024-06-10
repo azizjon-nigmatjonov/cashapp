@@ -1,0 +1,52 @@
+@mixin alignCenterJustifyBetween() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin justifyBetween() {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin alignCenter() {
+  display: flex;
+  align-items: center;
+}
+@mixin alignCenterJusftifyCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin alignEndJustifyCenter() {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+@mixin alignEndJustifyEnd() {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@mixin flexDirectionColumn() {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexDirectionColumnReverse() {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@mixin remove-scroll() {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@mixin smooth-scroll() {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+// @use "/src/scss/colors";
+@import "../public/fonts/font.css";
+@import './scss/styles';
+
+html {
+  font-size: 0.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif "Gilroy";
+  text-decoration: none;
+}
+
+.overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btns {
+  display: flex;
+  gap: 16px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid $mainBorders;
+  height: 70px;
+  @include alignCenter;
+  justify-content: flex-end;
+  padding-right: 80px;
+}

@@ -1,0 +1,23 @@
+.FormCard {
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .header {
+    box-shadow: inset 0px -1px 0px #e5e9eb;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btns-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,41 @@
+.top {
+  @include alignCenter;
+  gap: 16px;
+  .title {
+    color: $light;
+    font-weight: bold;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 25px;
+}
+
+.permissionList {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  .item {
+    @include alignCenterJustifyBetween;
+
+    .title {
+      font-weight: 500;
+      font-size: 15px
+    }
+
+    .switch {
+      @include alignCenter;
+      gap: 15px;
+
+      .status {
+        &.active {
+          color: $primary;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  @include alignCenterJustifyBetween;
+  column-gap: 16px;
+  .box {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+
+    &.silver {
+      background-color: #c0c0c0;
+    }
+    &.gold {
+      background-color: #ffd700;
+    }
+    &.platinum {
+      background-color: #e5e4e2;
+    }
+  }
+}

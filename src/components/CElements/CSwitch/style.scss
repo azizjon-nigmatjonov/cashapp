@@ -1,0 +1,33 @@
+.CSwitch {
+  .MuiSwitch-root {
+    // width: 70px;
+    .MuiButtonBase-root {
+      //   background-color: $main
+      .MuiSwitch-thumb {
+        // background-color: white;
+        border-color: $grey;
+      }
+
+      &.Mui-disabled {
+        .MuiSwitch-thumb {
+          background-color: $primary !important;
+          // border: 1px solid $primary !important;
+        }
+      }
+
+      &.Mui-checked {
+        .MuiSwitch-thumb {
+          // background-color: $main;
+          border: none;
+          // border-color: tra;
+        }
+      }
+    }
+    .MuiSwitch-track {
+      // background-color: $grey !important;
+    }
+    .MuiSwitch-track {
+      background-color: $grey;
+    }
+  }
+}

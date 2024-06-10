@@ -1,0 +1,36 @@
+.limitBtn {
+  @include alignCenterJusftifyCenter;
+  cursor: pointer;
+  border: 1px solid $borders;
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  .text {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+.limitsList {
+  list-style-type: none;
+  @include alignCenterJusftifyCenter;
+  @include flexDirectionColumn;
+  width: 70px;
+
+  li {
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &:first-child {
+      padding-top: 10px;
+    }
+    &:last-child {
+      padding-bottom: 10px;
+    }
+    &:hover {
+      background-color: $hover;
+    }
+  }
+}

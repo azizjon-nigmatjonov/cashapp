@@ -1,0 +1,15 @@
+.wrapper {
+  @include alignCenterJusftifyCenter;
+  @include flexDirectionColumn;
+
+  h1 {
+    font-size: 24px;
+    color: $black;
+    margin-top: 15px;
+  }
+  p {
+    color: $light;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}

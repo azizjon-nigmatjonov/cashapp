@@ -1,0 +1,20 @@
+.searchInput {
+  //   background-color: red;
+  .MuiInputBase-root {
+    border-radius: 10px;
+    border-color: $borders;
+    font-size: 14px;
+    font-weight: 500;
+    &:focus {
+      outline: none;
+    }
+  }
+  .Mui-focused {
+    outline: none;
+    box-shadow: none;
+
+    .MuiOutlinedInput-notchedOutline {
+      border: 2px solid $main;
+    }
+  }
+}

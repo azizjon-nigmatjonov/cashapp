@@ -1,0 +1,6 @@
+.extraHeader {
+  @include alignCenter;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 16px;
+}

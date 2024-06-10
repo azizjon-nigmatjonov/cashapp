@@ -1,0 +1,55 @@
+.CBreadcrumbs-wrapper {
+  display: flex;
+  align-items: center;
+}
+.CBreadcrumbs {
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    &.link {
+      cursor: pointer;
+      &:hover {
+        color: $main;
+
+        .breadcrumb-label {
+          color: $main-hover;
+        }
+      }
+    }
+
+    &.last {
+      cursor: auto;
+      .breadcrumb-label {
+        color: $grey;
+      }
+      &:hover {
+        color: $main;
+
+        .breadcrumb-label {
+          color: $grey;
+        }
+      }
+    }
+  }
+
+  .breadcrumb-label {
+    margin-left: 10px;
+    font-size: 14px;
+    color: $main;
+    font-weight: 600;
+    white-space: pre-wrap;
+  }
+
+  &.small {
+    .breadcrumb-label {
+      margin-left: 0px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .MuiBreadcrumbs-separator {
+    margin: 0 5px;
+    color: #000;
+  }
+}

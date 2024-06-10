@@ -1,0 +1,73 @@
+.HFInput {
+  width: 100%;
+  .MuiFormControl-root {
+    position: relative;
+    width: 100%;
+    .MuiInputBase-root {
+      &.Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+          border-color: $main;
+        }
+      }
+      .MuiInputBase-input {
+        min-height: 30px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .Mui-disabled {
+        background-color: $page-background;
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $borders;
+        font-size: 16px;
+        color: $dark;
+      }
+    }
+
+    .MuiFormHelperText-root {
+      color: $error;
+      // font-size: 12px !important;
+      position: absolute;
+      bottom: -18px;
+      left: -10px;
+    }
+  }
+
+  .visibility {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+  }
+}
+
+.HFSelect {
+  .MuiSelect-select {
+    @include alignCenter;
+  }
+}
+
+.HFTextareaAutosize {
+  position: relative;
+  textarea {
+    border: 1px solid $borders;
+    border-radius: 10px;
+    min-height: 30px;
+    width: 100%;
+    padding: 16px;
+    &:focus {
+      border: 1px solid $main !important;
+      outline: none;
+    }
+    color: $black;
+    font-family: sans-serif "Roboto" !important;
+    resize: vertical;
+  }
+  .error {
+    color: $error;
+    font-size: 10px;
+    position: absolute;
+    bottom: -12px;
+    left: 4px;
+  }
+}

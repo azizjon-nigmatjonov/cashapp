@@ -1,0 +1,48 @@
+.COptimizedRangePicker {
+    .wrapper {
+        @include alignCenter;
+        gap: 2px;
+        height: 30px;
+
+        .leftBtn, .rightBtn, .textF {
+            background-color: $main;
+            height: 100%;
+            width: 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            @include alignCenterJusftifyCenter;
+        }
+        .textF {
+            min-width: 140px;
+            padding: 0 6px;
+            color: white;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .leftBtn {
+            svg {
+                margin-left: 6px;
+            }
+        }
+        .rightBtn {
+            svg {
+                margin-left: 3px;
+            }
+        }
+    }
+    .rmdp-wrapper  {
+        background-color: red !important;
+    }
+    .rmdp-wrapper {
+        background-color: red !important;
+        .rmdp-header {
+            .rmdp-arrow-container {
+              
+            }
+        }
+        .rmdp-arrow {
+            display: none;
+            border-color: red !important;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.filters {
+  @include alignCenter;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}

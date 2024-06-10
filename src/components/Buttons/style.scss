@@ -1,0 +1,17 @@
+.CbtnWrapper {
+  .MuiButtonBase-root {
+    background-color: $main;
+    border-radius: 10px;
+    box-shadow: none;
+    height: 40px;
+    white-space: nowrap;
+  }
+}
+
+.CbtnWrapper.cancel {
+  .MuiButtonBase-root {
+    background-color: transparent;
+    color: $error;
+    border: 1px solid $mainBorders;
+  }
+}

@@ -1,0 +1,52 @@
+.wrapper {
+    margin-top: 16px;
+    border-radius: 8px;
+    border: 1px solid $borders;
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+        color: $greyLighter;
+        border-bottom: 1px solid $borders;
+        padding: 8px 16px;
+    }
+    .list {
+        list-style-type: none;
+        height: 400px;
+        overflow: scroll;
+
+        .item {
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid $borders;
+            padding: 10px 16px;
+            min-height: 65px;
+            cursor: pointer;
+            transition-duration: 0.2s;
+            &:hover {
+                background-color: $hover;
+            }
+            &:last-child {
+                border: none;
+            }
+            h3 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            p {
+                margin-top: 4px;
+            }
+        }
+    }
+}
+.input {
+    outline: none;
+    height: 47px;
+    border: 1px solid $borders;
+    border-radius: 8px;
+    width: 100%;
+    padding: 14px;
+    &:focus {
+        border-color: $main;
+        outline: 1px solid $main;
+    }
+}

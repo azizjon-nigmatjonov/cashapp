@@ -1,0 +1,119 @@
+// @use '/src/scss/colors';
+
+.sidebar {
+  display: flex;
+}
+
+.leftSide {
+  width: 56px;
+  box-shadow: inset -1px 0px 0px $mainBorders;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+
+    .logo {
+      cursor: pointer;
+    }
+  }
+
+  .menuItemsBlock {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+
+    
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .menuItem {
+    height: 36px;
+    width: 36px;
+    border-radius: 6px;
+    color: $grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.active {
+      color: #fff;
+      background-color: $main;
+    }
+  }
+}
+
+.rightSide {
+  width: 240px;
+  box-shadow: inset -1px 0px 0px rgba(229, 233, 235, 0.75);
+
+  .header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    box-shadow: inset 0px -1px 0px #e5e9eb;
+
+    .title {
+      flex: 1;
+    }
+
+    .closeButton {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #6e8bb71a;
+      border-radius: 6px;
+      transition-duration: 0.1s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $main;
+        color: #fff;
+      }
+    }
+  }
+
+  .menuItemsBlock {
+    height: calc(100vh - 56px);
+    padding: 10px;
+    gap: 5px;
+
+    .menuItem {
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 24px;
+      color: $grey;
+      cursor: pointer;
+      display: block;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &.active {
+        color: #fff;
+        background-color: $main;
+      }
+    }
+  }
+}

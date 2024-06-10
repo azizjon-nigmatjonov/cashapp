@@ -1,0 +1,40 @@
+.CTextField {
+  .MuiFormControl-root {
+    position: relative;
+    width: 100%;
+    .MuiInputBase-root {
+      &.Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+          border-color: $main;
+        }
+      }
+      .MuiInputBase-input {
+        min-height: 30px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .Mui-disabled {
+        background-color: $page-background;
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $borders;
+        font-size: 16px;
+        color: $dark;
+      }
+    }
+
+    .MuiFormHelperText-root {
+      color: $error;
+      position: absolute;
+      bottom: -18px;
+      left: -10px;
+    }
+  }
+
+  .visibility {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+  }
+}
